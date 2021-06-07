@@ -46,8 +46,8 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 4-6| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|June   7| Project Approval / Research / Build File Structure / Create AirTable| Incomplete
+|June 4-6| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|June   7| Project Approval / Research / Build File Structure / Create AirTable/ Begin Pseudocode| Complete
 |June   8| Complete Pseudocode / Begin Functionality Coding| Incomplete
 |June   9| Continue Functionality Code | Incomplete
 |June  10| Complete Functionality Code / Begin Styling | Incomplete
@@ -60,8 +60,8 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Reasearch  | H | 3hrs| hrs | hrs |
-| File Structure | H | 1hr| hrs | rs |
+| Reasearch  | H | 3hrs| 3hrs | hrs |
+| File Structure | H | 1hr| 2hrs | rs |
 | Pseudocode | H | 3hrs| hrs | hrs |
 | Get Request | H | 3hrs| hrs | hrs |
 | Rendering Data from Get/Display Plants component  | H | 4hrs| hrs | hrs |
