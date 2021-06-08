@@ -1,0 +1,10 @@
+.homebtn {
+  position: relative;
+  right: 120px;
+  margin: 10px;
+}
+.backbtn {
+  position: relative;
+  left: 120px;
+  margin: 10px;
+}
