@@ -5,14 +5,28 @@
 //import navbar
 //render data from get request
 //create link to form for addplant and plant details
-
-import React from 'react'
+import {useState, useEffect} from 'react'
+import NavBar from '../NavBar/NavBar'
+import { getPlantList } from '../../Services/api'
+import "../NavBar/NavBar.css"
+import "./PlantList.css"
 
 export default function PlantList() {
+  const [plantList, setPlantList] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await getPlantList()
+      console.log(res)
+      setPlantList(res)
+    }
+  fetchData()
+}, [])
+
   return (
     <div>
-      
-      This is my plant list
+      <NavBar/>
+      <h2>My Garden</h2>
     </div>
   )
 }

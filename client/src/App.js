@@ -1,13 +1,20 @@
-//make proper imports and create routes to header, footer, home, 
-
-import { Route } from 'react-router';
 import './App.css';
+import { Route } from 'react-router';
+import Home from "./Components/Home/Home"
+import PlantList from "./Components/PlantList/PlantList"
+
 
 
 function App() {
   return (
     <div className="App">
-      <h2>GrowMe </h2>
+      
+      <Route exact path="/">
+        <Home/>
+      </Route>
+      <Route path="/plants">
+        <PlantList/>
+      </Route>
     </div>
   );
 }
