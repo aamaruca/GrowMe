@@ -6,7 +6,7 @@
 //import css
 
 import {useState, useEffect} from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 import { getOnePlant } from "../../Services/api"
 import NavBar2 from '../NavBar/NavBar2'
 

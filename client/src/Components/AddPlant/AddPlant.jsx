@@ -5,13 +5,14 @@
 //create handlesubmit and handlechange events
 //pmvp create toggle to reroute back to plantlist on submit instead of navbar
 import {useState} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import NavBar2 from '../NavBar/NavBar2'
 import './AddPlant.css'
 import {postNewPlant} from '../../Services/api'
 
 export default function AddPlant() {
   const [formData, setFormData] = useState({})
+  const history = useHistory()
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -25,8 +26,8 @@ export default function AddPlant() {
     e.preventDefault();
     const res = await postNewPlant(formData);
     console.log(res);
+    history.push("/plants")
   };
-
 
   return (
     <div>
@@ -50,8 +51,7 @@ export default function AddPlant() {
         <br/><label>General Notes: </label>
         <br/><textarea  name="notes"
           rows={10} /><br />
-        
-        <Link to="/plants"><button>Plant Me!</button></Link>
+      <button>Plant Me!</button>
       </form>
   
     </div>
