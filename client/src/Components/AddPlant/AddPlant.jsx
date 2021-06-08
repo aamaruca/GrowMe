@@ -4,23 +4,39 @@
 //create form for post request
 //create handlesubmit and handlechange events
 //pmvp create toggle to reroute back to plantlist on submit instead of navbar
-import axios from 'axios'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
+import {Link} from 'react-router-dom'
 import NavBar2 from '../NavBar/NavBar2'
 import './AddPlant.css'
+import {postNewPlant} from '../../Services/api'
 
 export default function AddPlant() {
+  const [formData, setFormData] = useState({})
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    
+    setFormData({
+      ...formData,
+      [name]: value
+    })
+  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await postNewPlant(formData);
+    console.log(res);
+  };
 
 
   return (
     <div>
       <NavBar2 />
       <h2>Plant Notes</h2>
-      <form>
+      <form onChange={handleChange} onSubmit={handleSubmit}>
         <label>Plant Name: </label>
         <input type="text" name="name"></input><br/>
         <br/><label>Date Planted: </label>
-        <input type="text" name="datePlanted"></input><br />
+        <input type="date" name="datePlanted"></input><br />
         <br/><label>Location: </label>
         <input type="text" name="location"></input><br />
         <br/><label>Purchased from: </label>
@@ -34,8 +50,8 @@ export default function AddPlant() {
         <br/><label>General Notes: </label>
         <br/><textarea  name="notes"
           rows={10} /><br />
-        <br/><label>Upload Image: </label>
-        <input type="file" name="image"></input><br />
+        
+        <Link to="/plants"><button>Plant Me!</button></Link>
       </form>
   
     </div>

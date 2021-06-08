@@ -30,7 +30,7 @@ export default function PlantList() {
       <h2>My Garden</h2>
       <div className="plant-list">
         {plantList.map((plant, index) => (
-          <div key={index}><Link to={`/plant/${plant.id}`}>{plant.fields.name}</Link></div>
+          <div key={index}><Link to={`/details/${plant.id}`}>{plant.fields.name}</Link></div>
         ))}
         <Link to="/new"><button>New Plant</button></Link>
       </div>

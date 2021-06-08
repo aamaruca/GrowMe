@@ -22,3 +22,11 @@ export const getPlantList = async () => {
   }
 }
 
+export const postNewPlant = async (form) => {
+  try {
+    const res = await axios.post(`${baseUrl}`, { fields: form }, config);
+    return res.data
+  } catch (error) {
+    console.error(error);
+  }
+};
