@@ -32,6 +32,7 @@ export default function PlantList() {
         {plantList.map((plant, index) => (
           <div key={index}><Link to={`/plant/${plant.id}`}>{plant.fields.name}</Link></div>
         ))}
+        <Link to="/new"><button>New Plant</button></Link>
       </div>
     </>
   )

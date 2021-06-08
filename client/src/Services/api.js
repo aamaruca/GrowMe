@@ -21,3 +21,4 @@ export const getPlantList = async () => {
     console.error(error)
   }
 }
+
