@@ -5,7 +5,7 @@
 //create handlesubmit and handlechange events
 //pmvp create toggle to reroute back to plantlist on submit instead of navbar
 import {useState} from 'react'
-import {Link, useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import NavBar2 from '../NavBar/NavBar2'
 import './AddPlant.css'
 import {postNewPlant} from '../../Services/api'

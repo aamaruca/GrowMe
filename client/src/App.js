@@ -4,6 +4,7 @@ import Home from './Components/Home/Home'
 import PlantList from './Components/PlantList/PlantList'
 import PlantDetails from './Components/PlantDetails/PlantDetails';
 import AddPlant from './Components/AddPlant/AddPlant'
+import ImageUpload from './Components/ImageUpload/ImageUpload';
 
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
       </Route>
       <Route exact path="/new">
         <AddPlant/>
+      </Route>
+      <Route exact path ="/imageUpload">
+        <ImageUpload/>
       </Route>
     </div>
   );
