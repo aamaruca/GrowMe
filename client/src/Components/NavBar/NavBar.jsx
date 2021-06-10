@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <div>
       <Link to="/">
-        <button className="home-btn">Home</button>
+        <button className="home-btn"><strong>Home</strong></button>
       </Link>
     </div>
   );

@@ -1,6 +1,47 @@
-
-  .home-btn {
-    position: relative;
-    right: 150px;
-    margin: 10px;
-  }
+.home-btn {
+  position: relative;
+  right: 135px;
+  margin: 20px;
+  height: 40px;
+  width: 70px;
+  background-color: #c5d86d;
+  color: #261c15;
+  border: none;
+  border-radius: 15px;
+  font-family:  'Bad Script', cursive;
+  font-weight: bold;
+  font-size: 18px;
+}
+.plant-list a {
+  color: #491602ff;
+  font-family: 'Lora', serif;
+  font-size:20px;
+}
+.plant-list a:visited {
+  color: #491602ff;
+  text-decoration: none;
+}
+.plant-list a:link {
+  text-decoration: none;
+}
+.plant-list {
+  position: relative;
+  max-width: 500px;
+  margin: 75px;
+  padding: 20px;
+  background-color: #f7f7f2;
+  color: #261c15;
+  border-radius: 25px;
+}
+.new-btn {
+  height: 50px;
+  width: 125px;
+  background-color:#f05d23 ;
+  color: #261c15;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Bad Script', cursive;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 25px;
+}

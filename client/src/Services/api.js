@@ -43,7 +43,8 @@ export const postNewPlant = async (form) => {
 export const uploadImage = async (id, plant) => {
   console.log(plant)
   try {
-    const res= await axios.put(`${baseUrl}/${id}`, {fields: plant}, config)
+    const res = await axios.put(`${baseUrl}/${id}`, { fields: plant }, config)
+    return res.data
   } catch (error) {
     console.error(error);
   }

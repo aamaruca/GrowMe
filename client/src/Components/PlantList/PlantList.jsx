@@ -1,10 +1,3 @@
-//import request get from api.js
-//import hooks from react
-//import link from rrd
-//import css
-//import navbar
-//render data from get request
-//create link to form for addplant and plant details
 import { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { getPlantList } from '../../Services/api'
@@ -27,12 +20,12 @@ export default function PlantList() {
   return (
     <>
       <NavBar/>
-      <h2>My Garden</h2>
       <div className="plant-list">
+      <h1>My Garden</h1>
         {plantList.map((plant, index) => (
           <div key={index}><Link to={`/details/${plant.id}`}>{plant.fields.name}</Link></div>
         ))}
-        <Link to="/new"><button>New Plant</button></Link>
+        <Link to="/new"><button className="new-btn">New Plant</button></Link>
       </div>
     </>
   )

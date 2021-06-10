@@ -39,7 +39,7 @@ export default function PlantDetails() {
       <p><strong>Bloom Color: </strong>{plant.fields?.bloomColor}</p>
       <p><strong>Bloom Season: </strong>{plant.fields?.bloomSeason}</p>
       <p><strong>General Notes: </strong>{plant.fields?.notes}</p>
-      {plant.fields?.image ? <img src = {plant.fields?.image}/> : <ImageUpload plant={plant} fetchData={fetchData}/>}
+      {plant.fields?.image ? <img src={plant.fields?.image} alt={plant.fields?.name}/> : <ImageUpload plant={plant} fetchData={fetchData}/>}
       
     </div>
   )
