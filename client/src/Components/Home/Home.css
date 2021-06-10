@@ -5,8 +5,26 @@
   padding: 20px;
   border: 5px double #505232;
   background-color: #491602ff;
-  /* background-image:  linear-gradient(45deg, #491602ff, #411C03ff, #392204ff, #312705ff);  */
-  /* background-image: linear-gradient(45deg, #491602ff, #421E04ff, #3A2505ff, #332D07ff, #2B3509); */
   color: #a5a58d; 
   border-radius: 15px;
 } 
+h1 {
+  font-family: 'Bad Script', cursive;
+  margin:auto;
+}
+.intro {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.garden-btn {
+  height: 50px;
+  width: 100px;
+  background-color:#a5a58d; ;
+  color:#505232;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Bad Script', cursive;
+  font-weight: bold;
+  
+}

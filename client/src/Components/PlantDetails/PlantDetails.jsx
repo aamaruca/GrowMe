@@ -6,10 +6,10 @@
 //import css
 
 import {useState, useEffect} from 'react'
-import { useParams, Link} from 'react-router-dom'
+import { useParams, } from 'react-router-dom'
 import { getOnePlant } from "../../Services/api"
 import NavBar2 from '../NavBar/NavBar2'
-
+import ImageUpload from "../ImageUpload/ImageUpload"
 
 
 
@@ -20,14 +20,13 @@ export default function PlantDetails() {
 
 
   useEffect(() => {
-    const fetchData = async () => {
-      const res = await getOnePlant(id);
-      setPlant(res);
-      console.log(res);
-    }
     fetchData()
   }, [id])
-
+  const fetchData = async () => {
+    const res = await getOnePlant(id);
+    setPlant(res);
+    console.log(res);
+  }
 
   return (
     <div>
@@ -40,8 +39,8 @@ export default function PlantDetails() {
       <p><strong>Bloom Color: </strong>{plant.fields?.bloomColor}</p>
       <p><strong>Bloom Season: </strong>{plant.fields?.bloomSeason}</p>
       <p><strong>General Notes: </strong>{plant.fields?.notes}</p>
-    
-      <Link to="/imageUpload"><button>Upload Image </button></Link>
+      {plant.fields?.image ? <img src = {plant.fields?.image}/> : <ImageUpload plant={plant} fetchData={fetchData}/>}
+      
     </div>
   )
 }
