@@ -1,14 +1,10 @@
-// import header and footer?
-//make button and link to PlantList
-//render introduction, style
-//import css
-
 import React from "react";
 import { Link } from "react-router-dom"
+import "./Home.css"
 
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       <h2>GrowMe</h2>
       <p>
         GrowMe is a space for the avid or amatuer gardener to take notes on the

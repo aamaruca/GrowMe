@@ -1,3 +1,6 @@
 body {
   text-align: center;
+  background-image: url("https://i.imgur.com/aXmrL9c.jpg?1");
+  background-size: cover;
+  color: white;
 }

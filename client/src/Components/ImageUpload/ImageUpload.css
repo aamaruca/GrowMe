@@ -8,9 +8,9 @@
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.active{
+.active {
   border: 2px solid red;
 }

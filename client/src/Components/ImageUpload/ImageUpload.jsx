@@ -29,7 +29,6 @@ export default function ImageUpload() {
     accepts: 'image/*',
     multiple: false,
   })
-  
 
   return (
     <>
@@ -39,7 +38,7 @@ export default function ImageUpload() {
     </div>
       <ul>
         {uploadedFiles.map((file, index) => (
-          <li key= {index}>{file.public_id}</li>
+          <li key= {index}>{file.url}</li>
         ))}
       </ul>
       </>
