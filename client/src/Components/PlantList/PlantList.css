@@ -12,22 +12,22 @@
   font-weight: bold;
   font-size: 18px;
 }
-.plant-list a {
+.container a {
   color: #491602ff;
   font-family: 'Lora', serif;
   font-size:20px;
 }
-.plant-list a:visited {
+.container a:visited {
   color: #491602ff;
   text-decoration: none;
 }
-.plant-list a:link {
+.container a:link {
   text-decoration: none;
 }
-.plant-list {
+.container {
   position: relative;
   max-width: 500px;
-  margin: 75px ;
+  margin: 70px;
   padding: 20px;
   background-color: #f7f7f2;
   color: #261c15;
@@ -44,4 +44,43 @@
   font-weight: bold;
   font-size: 22px;
   margin-top: 25px;
+}
+@media screen and (min-width: 500px) {
+  .home-btn {
+    position: relative;
+    right: 150px;
+    margin: 30px auto;
+  }
+  .container {
+    position: relative;
+    max-width: 500px;
+    margin: 70px 90px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .home-btn {
+    position: relative;
+    right: 250px;
+    margin: 30px ;
+  }
+}
+@media screen and (min-width: 700px) {
+  .home-btn {
+    position: relative;
+    right: 275px;
+  }
+  .container {
+    max-width: 500px;
+    margin: 100px 150px ;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .home-btn {
+    position: relative;
+    right: 400px;
+  }
+  .container {
+    max-width: 500px;
+    margin: 100px auto; 
+  }
 }

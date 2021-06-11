@@ -20,10 +20,10 @@ export default function PlantList() {
   return (
     <>
       <NavBar/>
-      <div className="plant-list">
+      <div className="container">
       <h1>My Garden</h1>
         {plantList.map((plant, index) => (
-          <div key={index}><Link to={`/details/${plant.id}`}>{plant.fields.name}</Link></div>
+          <div className="plant-list" key={index}><Link to={`/details/${plant.id}`}>{plant.fields.name}</Link></div>
         ))}
         <Link to="/new"><button className="new-btn">New Plant</button></Link>
       </div>
