@@ -25,7 +25,7 @@ export default function ImageUpload(props) {
         setUploadedFiles((old) => [...old, data]);
       });
     },
-    
+    // eslint-disable-next-line
     [props]
   );
 
@@ -52,7 +52,7 @@ export default function ImageUpload(props) {
         </div>
       <ul>
         {uploadedFiles.map((file, index) => (
-          <p key={index}>{file.url}</p>
+          <img key={index} src={file.image}/>
         ))}
       </ul>
     </>

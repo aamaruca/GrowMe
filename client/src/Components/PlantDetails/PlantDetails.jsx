@@ -16,7 +16,6 @@ export default function PlantDetails() {
   const fetchData = async () => {
     const res = await getOnePlant(id);
     setPlant(res);
-    console.log(res);
   };
 
   return (

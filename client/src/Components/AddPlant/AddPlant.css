@@ -36,7 +36,7 @@
 }
 .data {
   max-width: 300px;
-  margin:  50px ;
+  margin: 20px auto;
   padding: 15px;
   color: #261c15;
   border-radius: 25px;
@@ -78,12 +78,6 @@
   outline: none;
 }
 
-.notes {
-  font-family: "Lora", serif;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 10px;
-}
 .textarea {
   height: 150px;
   width: 200px;
@@ -92,4 +86,60 @@
   font-weight: bold;
   font-size: 18px;
   border-radius: 15px;
+}
+@media screen and (min-width: 470px) {
+  .homebtn {
+    right: 125px;
+  }
+  .backbtn {
+    left: 125px;
+  }
+  .data {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  .homebtn {
+    right: 150px;
+  }
+  .backbtn {
+    left: 150px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .homebtn {
+    right: 250px;
+  }
+  .backbtn {
+    left: 250px;
+  }
+  .data {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .homebtn {
+    right: 275px;
+  }
+  .backbtn {
+    left: 275px;
+  }
+  .data {
+    max-width: 500px;
+    margin: auto; 
+  }
+}
+@media screen and (min-width: 900px) {
+  .homebtn {
+    right: 300px;
+  }
+  .backbtn {
+    left: 300px;
+  }
+  .data {
+    max-width: 500px;
+    margin: auto; 
+  }
 }

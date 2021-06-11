@@ -1,9 +1,10 @@
 
 .plant-details {
   position: relative;
-  max-width: 700px;
-  margin: 50px;
+  max-width: 500px;
+  margin: 20px 60px 20px 50px;
   padding: 20px;
+  
   background-color: #e4e6c3;
   color: #261c15;
   border-radius: 25px;
@@ -19,6 +20,44 @@ p {
   font-size: 20px;
 }
 .image {
-  height: 200px;
-  width: 250px;
+  height: 100px;
+  width: 100px;
+}
+@media screen and (min-width: 500px) {
+  .home-btn {
+    right: 400px;
+    margin: 30px auto;
+  }
+  .plant-details {
+    max-width: 300px;
+    margin: auto;
+  }
+  .image {
+    height: 150px;
+    width: 175px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .home-btn {
+    right: 250px;
+    margin: 30px ;
+  }
+}
+@media screen and (min-width: 800px) {
+  .home-btn {
+    right: 275px;
+  }
+  .plant-details {
+    max-width: 500px;
+    margin: auto;
+  }
+  .image {
+    height: 200px;
+    width: 225px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .home-btn {
+    right: 400px;
+  }
 }

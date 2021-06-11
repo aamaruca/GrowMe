@@ -43,8 +43,7 @@ export default function AddPlant() {
           <br />
           <input className="input" type="text" name="bloomSeason" placeholder="Month of Bloom"></input>
           <br />
-          <label className= "notes">General Notes: </label>
-          <textarea className="textarea" name="notes" rows={10} placeholder="Enter notes here..." />
+          <textarea className="textarea" name="notes" rows={10} placeholder="General notes..." />
           <br />
           <button className="addbtn">Plant Me!</button>
         </form>
