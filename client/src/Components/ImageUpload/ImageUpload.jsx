@@ -25,6 +25,7 @@ export default function ImageUpload(props) {
         setUploadedFiles((old) => [...old, data]);
       });
     },
+    // eslint-disable-next-line
     [props]
   );
 
@@ -32,7 +33,7 @@ export default function ImageUpload(props) {
     if (data.secure_url) {
       let id = props.plant.id;
       data = { ...props.plant.fields, image: data.secure_url };
-      const res = await uploadImage(id, data);
+      await uploadImage(id, data);
       props.fetchData();
     }
   };

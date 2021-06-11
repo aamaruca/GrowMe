@@ -21,6 +21,7 @@ export default function PlantDetails() {
 
   useEffect(() => {
     fetchData()
+    // eslint-disable-next-line
   }, [id])
   const fetchData = async () => {
     const res = await getOnePlant(id);
