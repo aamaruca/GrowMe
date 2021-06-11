@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { getPlantList } from '../../Services/api'
 import NavBar from '../NavBar/NavBar'
-import "../NavBar/NavBar.css"
 import "./PlantList.css"
 
 export default function PlantList() {

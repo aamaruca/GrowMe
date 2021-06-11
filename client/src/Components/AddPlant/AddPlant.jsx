@@ -27,7 +27,7 @@ export default function AddPlant() {
     <>
       <NavBar2 />
       <div className="data">
-        <h1>Plant Notes</h1>
+        <h1 className="title">Plant Notes</h1>
         <form className="form" onChange={handleChange} onSubmit={handleSubmit}>
           <input className="input" type="text" name="name" placeholder="Plant Name"></input>
           <br />

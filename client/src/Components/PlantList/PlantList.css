@@ -12,6 +12,11 @@
   font-weight: bold;
   font-size: 18px;
 }
+.home-btn:hover {
+  background-color: #f05d23;
+  transition-duration: 0.1s;
+}
+
 .container a {
   color: #491602ff;
   font-family: 'Lora', serif;
@@ -20,6 +25,11 @@
 .container a:visited {
   color: #491602ff;
   text-decoration: none;
+}
+.container a:hover {
+  background-color: #491602ff;
+  color:#f7f7f2;
+  transition-duration: .1s;
 }
 .container a:link {
   text-decoration: none;
@@ -44,6 +54,11 @@
   font-weight: bold;
   font-size: 22px;
   margin-top: 25px;
+}
+.new-btn:hover {
+  background-color: #c5d86d;
+  transition-duration: .1s;
+  
 }
 @media screen and (min-width: 500px) {
   .home-btn {

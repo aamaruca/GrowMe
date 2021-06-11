@@ -1,0 +1,24 @@
+
+.plant-details {
+  position: relative;
+  max-width: 700px;
+  margin: 50px;
+  padding: 20px;
+  background-color: #e4e6c3;
+  color: #261c15;
+  border-radius: 25px;
+}
+p {
+  font-family: "Lora", serif;
+  font-size: 17px;
+  padding: auto;
+}
+.labels {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.image {
+  height: 200px;
+  width: 250px;
+}

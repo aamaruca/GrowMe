@@ -25,7 +25,7 @@ export default function ImageUpload(props) {
         setUploadedFiles((old) => [...old, data]);
       });
     },
-    // eslint-disable-next-line
+    
     [props]
   );
 
@@ -38,7 +38,7 @@ export default function ImageUpload(props) {
     }
   };
   
-  const { getRootProps, getInputProps } = useDropzone({
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     accepts: "image/*",
     multiple: false,
@@ -46,13 +46,13 @@ export default function ImageUpload(props) {
 
   return (
     <>
-      <div {...getRootProps()} className="dropzone">
+      <div {...getRootProps()} className={`${"dropzone"} ${isDragActive ? "active" : null}`}>
         <input {...getInputProps()}></input>
-        drop zone
-      </div>
+        <h2>Drag & Drop <br/>Image Here</h2>
+        </div>
       <ul>
         {uploadedFiles.map((file, index) => (
-          <li key={index}>{file.url}</li>
+          <p key={index}>{file.url}</p>
         ))}
       </ul>
     </>
