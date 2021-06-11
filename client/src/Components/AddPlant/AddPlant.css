@@ -1,10 +1,86 @@
 .homebtn {
-  position: relative;
-  right: 120px;
-  margin: 10px;
-}
+    position: relative;
+    right: 85px;
+    margin: 20px;
+    height: 40px;
+    width: 70px;
+    background-color: #c5d86d;
+    color: #261c15;
+    border: none;
+    border-radius: 15px;
+    font-family:  'Bad Script', cursive;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
 .backbtn {
   position: relative;
-  left: 120px;
-  margin: 10px;
+  left: 85px;
+  margin: 20px;
+  height: 40px;
+  width: 70px;
+  background-color:#261c15; 
+  color: #c5d86d;
+  border: none;
+  border-radius: 15px;
+  font-family:  'Bad Script', cursive;
+  font-weight: bold;
+  font-size: 18px;
+}
+.data {
+    max-width: 500px;
+    margin: 50px;
+    padding: 15px;
+    background-color: #f7f7f2;
+    color:#261c15;
+    border-radius: 25px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  align-items: center;
+}
+.addbtn {
+  height: 50px;
+  width: 125px;
+  background-color:#f05d23 ;
+  color: #261c15;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Bad Script', cursive;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.form :focus {
+  background-color:#c5d86d;
+}
+.input {
+  height: 25px;
+  width: 150px;
+  font-family:'Lora', serif; 
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid #261c15;
+  background-color: #e4e6c3;
+  padding: 5px;
+  outline: none;
+}
+
+.notes {
+  font-family:'Lora', serif; 
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.textarea {
+  height: 150px;
+  width: 200px;
+  background-color: #e4e6c3;
+  font-family:'Lora', serif; 
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 15px;
 }

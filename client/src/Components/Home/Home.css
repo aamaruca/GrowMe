@@ -1,32 +1,42 @@
 .home {
-  position: fixed;
-  max-width: 250px;
-  margin: 75px;
+  position: relative;
+  margin: 80px;
   padding: 20px;
   background-color: #f7f7f2;
-  color:#261c15; 
-  /* border: 5px double #505232; */
+  color: #261c15;
   border-radius: 25px;
-} 
+}
 h1 {
-  font-family: 'Bad Script', cursive;
-  margin:auto;
+  font-family: "Bad Script", cursive;
+  margin: auto;
   font-size: 40px;
 }
 .intro {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 18px;
   padding-bottom: 10px;
 }
 .garden-btn {
   height: 50px;
   width: 125px;
-  background-color:#f05d23 ;
+  background-color: #f05d23;
   color: #261c15;
   border: none;
   border-radius: 15px;
-  font-family: 'Bad Script', cursive;
+  font-family: "Bad Script", cursive;
   font-weight: bold;
   font-size: 22px;
 }
-
+@media screen and (min-width: 470px) {
+  .home {
+    position: relative;
+    max-width: 500px;
+    margin: 100px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .home {
+    max-width: 500px;
+    margin: 100px auto;
+  }
+}
