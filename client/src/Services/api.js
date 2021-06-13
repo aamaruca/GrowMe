@@ -49,3 +49,11 @@ export const uploadImage = async (id, plant) => {
     console.error(error);
   }
 }
+export const deletePlant = async (id) => {
+  try {
+    const res = await axios.delete(`${baseUrl}/${id}`, config)
+    return res.data
+  } catch (error) {
+    console.error(error);
+  }
+} 

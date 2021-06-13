@@ -23,6 +23,23 @@ p {
   height: 100px;
   width: 100px;
 }
+.deletebtn {
+  height: 50px;
+  width: 125px;
+  background-color: #f05d23;
+  color: #261c15;
+  border: none;
+  border-radius: 15px;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.deletebtn:hover {
+  background-color: #c5d86d;
+  transition-duration: 0.1s;
+}
+
 @media screen and (min-width: 500px) {
   .home-btn {
     right: 400px;

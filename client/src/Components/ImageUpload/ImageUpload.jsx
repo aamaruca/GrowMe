@@ -64,3 +64,6 @@ export default function ImageUpload(props) {
     </>
   );
 }
+
+//source: https://www.youtube.com/watch?v=V8w7K1HdrFo
+//https://react-dropzone.js.org/

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { getOnePlant } from "../../Services/api";
+import { useParams, useHistory } from "react-router-dom";
+import { getOnePlant, deletePlant} from "../../Services/api";
 import NavBar2 from "../NavBar/NavBar2";
 import ImageUpload from "../ImageUpload/ImageUpload";
 import "./PlantDetails.css"
@@ -8,6 +8,7 @@ import "./PlantDetails.css"
 export default function PlantDetails() {
   const [plant, setPlant] = useState({});
   const { id } = useParams();
+  const history = useHistory()
 
   useEffect(() => {
     fetchData();
@@ -17,6 +18,10 @@ export default function PlantDetails() {
     const res = await getOnePlant(id);
     setPlant(res);
   };
+  const handleDelete = async () => {
+    await deletePlant(id)
+    history.push("/plants")
+  }
 
   return (
     <>
@@ -52,9 +57,10 @@ export default function PlantDetails() {
         </p>
         {plant.fields?.image ? (
           <img className="image" src={plant.fields?.image} alt={plant.fields?.name} />
-        ) : (
-          <ImageUpload plant={plant} fetchData={fetchData} />
-        )}
+          ) : (
+            <ImageUpload plant={plant} fetchData={fetchData} />
+            )}<br/>
+            <button className="deletebtn" onClick={handleDelete}>Delete Plant</button>
       </div>
     </>
   );

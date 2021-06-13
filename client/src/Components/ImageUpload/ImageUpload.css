@@ -1,9 +1,9 @@
 .dropzone {
   height: 100px;
-  margin: 10px;
+  margin: 1px;
   padding: 10px;
   border-radius: 30px;
-  background-color: #f05d23;
+  background-color: #c5d86d;
   display: flex;
   justify-content: center;
   align-items: center;
