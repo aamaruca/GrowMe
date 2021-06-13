@@ -1,8 +1,10 @@
 
 # Project Overview
 
-## GrowME (Potential to Change)
+## GrowME 
 
+## Deployed Link
+https://grow-me.netlify.app/
 
 ## Project Description
 GrowMe is a note taking app for gardeners. It will allow a user to enter in information about the individual plants they have and also make notes on that particular plant so they can keep track of them as the season progresses and refer back to their notes at later dates.
@@ -26,24 +28,19 @@ https://whimsical.com/growme-comp-heirarchy-5i4pzpUywtwYdiGck7Ab6M
 The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-
-
-- homegpage linking to a form page for user input
-- Render previously entered data on page as well as new entries
-- Render detail pages for each user entry to include more information from form
+- link to a form page for user input
+- Render entries on page as a list
+- Render detail pages for each user entry to include more data
 - Include a link back to the homepage from every other page
-- Allow users to either edit posts or creat subsequent new posts
 
 #### PostMVP  
-
-- Include feature to allow user to upload thier own photo
-- Implement toggle on rerender after new entries are submited
+-Include feature to allow user to upload thier own photo and render on page
+-Allow users to either edit posts or creat subsequent new posts
+- Implement toggle on rerender after new entries are submited back to display list page
 - Include a delete feature for user to delete entries
 - Utilize a component library for styling or functionality purposes
 
 ## Project Schedule
-
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 4-6| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
@@ -56,25 +53,22 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 |June  14| Presentation| Incomplete
 
 ## Timeframes
-
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Reasearch  | H | 3hrs| 3hrs | hrs |
-| File Structure | H | 1hr| 2hrs | rs |
-| Pseudocode | H | 3hrs| hrs | hrs |
-| Get Request | H | 3hrs| hrs | hrs |
-| Rendering Data from Get/Display Plants component  | H | 4hrs| hrs | hrs |
-| Adding Form Functionality | H | 3hrs| hrs | hrs |
-| Post Request | H | 3hrs| hrs | hrs |
-| Upload Picture Component | H | 3hrs| hrs | hrs |
-| Rendering data from Post/Creat New Plant component | H | 4hrs| hrs | hrs |
-| Routes and Links| H | 3hrs| hrs | hrs |
-| Buttons | H | 3hrs| hrs | hrs |
-| New/Edit Component | H | 3hrs| hrs | hrs |
-| CSS basic Styling | H | 3hrs| hrs | hrs |
-| CSS polished styling | H | 3hrs| hrs | hrs |
-| Total | H | 42hrs| hrs | hrs |
+| Reasearch  | H | 3hrs| 5hrs | 5hrs |
+| File Structure | H | 1hr| 2hrs | 2hrs |
+| Pseudocode | H | 3hrs| 2hrs | 3hrs |
+| Get Request | H | 3hrs| 3hrs | 3hrs |
+| Rendering Data from Get/Display Plants component  | H | 4hrs| 3hrs | 3hrs |
+| Adding Form Functionality | H | 3hrs| 3hrs | hrs |
+| Post Request | H | 3hrs| 1hrs | hrs |
+| Upload Picture Component | H | 5hrs| 5hrs | hrs |
+| Rendering data from Post/Creat New Plant component | H | 4hrs| 2hrs | 2hrs |
+| Routes and Links| H | 3hrs| 2hrs | 2hrs |
+| Buttons | H | 3hrs| 2hrs | 2hrs |
+| CSS basic Styling | H | 3hrs| 4hrs | 4hrs |
+| CSS polished styling | H | 3hrs| 3hrs | 3hrs |
+| Total | H | 42hrs| 38hrs | 38hrs |
 
 ## SWOT Analysis
 

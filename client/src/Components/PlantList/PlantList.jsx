@@ -21,10 +21,11 @@ export default function PlantList() {
       <NavBar/>
       <div className="container">
       <h1>My Garden</h1>
+      <Link to="/new"><button className="new-btn">New Plant</button></Link>
         {plantList.map((plant, index) => (
-          <div className="plant-list" key={index}><Link to={`/details/${plant.id}`}>{plant.fields.name}</Link></div>
+          <div className="plant-list" key={index}><Link to={`/details/${plant.id}`}>{plant.fields.name} 
+          </Link></div>
         ))}
-        <Link to="/new"><button className="new-btn">New Plant</button></Link>
       </div>
     </>
   )

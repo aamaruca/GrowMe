@@ -37,7 +37,7 @@ export default function ImageUpload(props) {
       props.fetchData();
     }
   };
-  
+
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     accepts: "image/*",
@@ -46,13 +46,19 @@ export default function ImageUpload(props) {
 
   return (
     <>
-      <div {...getRootProps()} className={`${"dropzone"} ${isDragActive ? "active" : null}`}>
+      <div
+        {...getRootProps()}
+        className={`${"dropzone"} ${isDragActive ? "active" : null}`}
+      >
         <input {...getInputProps()}></input>
-        <h2>Drag & Drop <br/>Image Here</h2>
-        </div>
+        <h2>
+          Drag & Drop <br />
+          Image Here
+        </h2>
+      </div>
       <ul>
         {uploadedFiles.map((file, index) => (
-          <img key={index} src={file.image}/>
+          <img key={index} src={file.url} alt={file.url} />
         ))}
       </ul>
     </>
