@@ -7,9 +7,7 @@ export default function Home() {
     <div className="home">
       <h1>GrowMe</h1>
       <p className= "intro">
-        GrowMe is a space for the avid or amatuer gardener to take notes on the
-        various plants they have. Enabling them to keep track of what they've
-        learned as the seasons go by. Lets get to planting!
+        Welcome to GrowMe! A note taking app for the avid or amatuer gardener. With GrowMe you can follow your plants journey and learn how to better your garden. Lets get to planting!
       </p> 
       <Link to="/plants">
         <button className="garden-btn">My Garden</button>
