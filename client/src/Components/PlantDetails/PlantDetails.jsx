@@ -60,7 +60,7 @@ export default function PlantDetails() {
           ) : (
             <ImageUpload plant={plant} fetchData={fetchData} />
             )}<br/>
-            <button className="deletebtn" onClick={handleDelete}>Delete Plant</button>
+            <button className="deletebtn" onClick={handleDelete}>Uproot Plant</button>
       </div>
     </>
   );
